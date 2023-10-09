@@ -1,0 +1,10 @@
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/install/strip.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/install/local.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/install.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/list_install_components.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/rebuild_cache.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/edit_cache.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/test.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/image_subber.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/perception_navigation_uninstall.dir
+/home/literbotpro/ros2_ws/build/perception_navigation/CMakeFiles/uninstall.dir

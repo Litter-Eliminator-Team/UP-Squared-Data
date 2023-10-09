@@ -1,0 +1,24 @@
+[1.453s] Invoking command in '/home/literbotpro/ros2_ws/src/perception_navigation': PYTHONPATH=/home/literbotpro/ros2_ws/build/perception_navigation/prefix_override:/home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/perception_navigation build --build-base /home/literbotpro/ros2_ws/build/perception_navigation/build install --record /home/literbotpro/ros2_ws/build/perception_navigation/install.log --install-scripts $base/lib/perception_navigation --single-version-externally-managed
+[1.691s] running egg_info
+[1.691s] writing ../../build/perception_navigation/perception_navigation.egg-info/PKG-INFO
+[1.691s] writing dependency_links to ../../build/perception_navigation/perception_navigation.egg-info/dependency_links.txt
+[1.692s] writing entry points to ../../build/perception_navigation/perception_navigation.egg-info/entry_points.txt
+[1.692s] writing requirements to ../../build/perception_navigation/perception_navigation.egg-info/requires.txt
+[1.692s] writing top-level names to ../../build/perception_navigation/perception_navigation.egg-info/top_level.txt
+[1.729s] reading manifest file '../../build/perception_navigation/perception_navigation.egg-info/SOURCES.txt'
+[1.730s] writing manifest file '../../build/perception_navigation/perception_navigation.egg-info/SOURCES.txt'
+[1.731s] running build
+[1.731s] running build_py
+[1.731s] copying perception_navigation/image_subber.py -> /home/literbotpro/ros2_ws/build/perception_navigation/build/lib/perception_navigation
+[1.731s] running install
+[1.732s] running install_lib
+[1.734s] copying /home/literbotpro/ros2_ws/build/perception_navigation/build/lib/perception_navigation/image_subber.py -> /home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation
+[1.735s] byte-compiling /home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation/image_subber.py to image_subber.cpython-38.pyc
+[1.740s] running install_data
+[1.741s] running install_egg_info
+[1.742s] removing '/home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+[1.743s] Copying ../../build/perception_navigation/perception_navigation.egg-info to /home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation-0.0.0-py3.8.egg-info
+[1.744s] running install_scripts
+[1.766s] Installing image_subber script to /home/literbotpro/ros2_ws/install/perception_navigation/lib/perception_navigation
+[1.767s] writing list of installed files to '/home/literbotpro/ros2_ws/build/perception_navigation/install.log'
+[1.791s] Invoked command in '/home/literbotpro/ros2_ws/src/perception_navigation' returned '0': PYTHONPATH=/home/literbotpro/ros2_ws/build/perception_navigation/prefix_override:/home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/perception_navigation build --build-base /home/literbotpro/ros2_ws/build/perception_navigation/build install --record /home/literbotpro/ros2_ws/build/perception_navigation/install.log --install-scripts $base/lib/perception_navigation --single-version-externally-managed

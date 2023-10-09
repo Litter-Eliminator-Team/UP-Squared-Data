@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/perception_navigation/perception_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/perception_navigation/perception_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/perception_navigation/perception_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/perception_navigation/perception_navigation.egg-info/requires.txt
+writing top-level names to ../../build/perception_navigation/perception_navigation.egg-info/top_level.txt
+reading manifest file '../../build/perception_navigation/perception_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/perception_navigation/perception_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying perception_navigation/image_subber.py -> /home/literbotpro/ros2_ws/build/perception_navigation/build/lib/perception_navigation
+running install
+running install_lib
+copying /home/literbotpro/ros2_ws/build/perception_navigation/build/lib/perception_navigation/image_subber.py -> /home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation
+byte-compiling /home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation/image_subber.py to image_subber.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/perception_navigation/perception_navigation.egg-info to /home/literbotpro/ros2_ws/install/perception_navigation/lib/python3.8/site-packages/perception_navigation-0.0.0-py3.8.egg-info
+running install_scripts
+Installing image_subber script to /home/literbotpro/ros2_ws/install/perception_navigation/lib/perception_navigation
+writing list of installed files to '/home/literbotpro/ros2_ws/build/perception_navigation/install.log'
