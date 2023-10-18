@@ -10,6 +10,7 @@ setup.py
 ../../build/perception_navigation/perception_navigation.egg-info/zip-safe
 perception_navigation/__init__.py
 perception_navigation/image_subber.py
+perception_navigation/keyboard_servos.py
 resource/perception_navigation
 test/test_copyright.py
 test/test_flake8.py

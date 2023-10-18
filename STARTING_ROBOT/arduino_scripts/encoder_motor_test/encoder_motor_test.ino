@@ -13,11 +13,13 @@ For use with the Adafruit Motor Shield v2
 // Create the motor shield object with the default I2C address
 Adafruit_MotorShield AFMS = Adafruit_MotorShield();
 Encoder knobLeft(1, 2);
+Encoder knobRight(3, 4);
 // Or, create it with a different I2C address (say for stacking)
 // Adafruit_MotorShield AFMS = Adafruit_MotorShield(0x61);
 
 // Select which 'port' M1, M2, M3 or M4. In this case, M1
-Adafruit_DCMotor *myMotor = AFMS.getMotor(2);
+Adafruit_DCMotor *leftMotor = AFMS.getMotor(2);
+Adafruit_DCMotor *rightMotor = AFMS.getMotor(3);
 // You can also make another motor on port M2
 //Adafruit_DCMotor *myOtherMotor = AFMS.getMotor(2);
 
@@ -31,48 +33,60 @@ void setup() {
     while (1);
   }
   Serial.println("Motor Shield found.");
-
-  // Set the speed to start, from 0 (off) to 255 (max speed)
-  myMotor->setSpeed(150);
-  myMotor->run(FORWARD);
-  // turn on motor
-  myMotor->run(RELEASE);
 }
 
 void loop() {
-  uint8_t i;
-  long newLeft;
+  //uint8_t i;
+  long newLeft, newRight;
 
-  knobLeft.write(0); 
+  knobLeft.write(0);
+  knobRight.write(0);
 
-  myMotor->run(FORWARD);
-  for (i=0; i<255; i++) {
-    myMotor->setSpeed(i);
-    delay(10);
-  }
-  for (i=255; i!=0; i--) {
-    myMotor->setSpeed(i);
-    delay(10);
-  }
+  leftMotor->setSpeed(65);
+  rightMotor->setSpeed(70);
+  leftMotor->run(FORWARD);
+  rightMotor->run(FORWARD);
+  delay(2000);
+  leftMotor->run(RELEASE);
+  rightMotor->run(RELEASE);
   newLeft = knobLeft.read();
   Serial.print("Left = ");
   Serial.print(newLeft);
   Serial.println();
-
-  myMotor->run(BACKWARD);
-  for (i=0; i<255; i++) {
-    myMotor->setSpeed(i);
-    delay(10);
-  }
-  for (i=255; i!=0; i--) {
-    myMotor->setSpeed(i);
-    delay(10);
-  }
-  newLeft = knobLeft.read();
-  Serial.print("Left = ");
-  Serial.print(newLeft);
+  newRight = knobRight.read();
+  Serial.print("Right = ");
+  Serial.print(newRight);
   Serial.println();
+  delay(100000);
 
-  myMotor->run(RELEASE);
-  delay(1000);
+  // myMotor->run(FORWARD);
+  // for (i=0; i<255; i++) {
+  //   myMotor->setSpeed(i);
+  //   delay(10);
+  // }
+  // for (i=255; i!=0; i--) {
+  //   myMotor->setSpeed(i);
+  //   delay(10);
+  // }
+  // newLeft = knobLeft.read();
+  // Serial.print("Left = ");
+  // Serial.print(newLeft);
+  // Serial.println();
+
+  // myMotor->run(BACKWARD);
+  // for (i=0; i<255; i++) {
+  //   myMotor->setSpeed(i);
+  //   delay(10);
+  // }
+  // for (i=255; i!=0; i--) {
+  //   myMotor->setSpeed(i);
+  //   delay(10);
+  // }
+  // newLeft = knobLeft.read();
+  // Serial.print("Left = ");
+  // Serial.print(newLeft);
+  // Serial.println();
+
+  // myMotor->run(RELEASE);
+  // delay(1000);
 }

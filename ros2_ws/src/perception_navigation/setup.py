@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'image_subber = perception_navigation.image_subber:main'
+            'image_subber = perception_navigation.image_subber:main',
+            'keyboard_servos = perception_navigation.keyboard_servos:main'
         ],
     },
 )

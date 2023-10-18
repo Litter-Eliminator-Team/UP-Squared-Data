@@ -20,7 +20,7 @@ class usbcamSubscriberNode(Node):
         )
         self.intel_pubber = self.create_publisher(Image, '/out/image', 3)
         self.motor_go = self.create_publisher(Int32, '/out/motor_go', 3)
-        self.dill_filename = "/home/literbotpro/ros2_ws/src/perception_navigation/perception_navigation/SVM_classify.pkl"
+        self.dill_filename = "/home/literbotpro/ros2_ws/src/perception_navigation/perception_navigation/SVM_classify2.pkl"
     def intel_callback(self, inp_im):
         try: 
             imCV = self.bridge.imgmsg_to_cv2(inp_im, "bgr8")
